@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     <title>Recipe Revolution</title>
 </head>
 <body>
-    <nav>
-        <ul>
+    <header>
+
+        <!-- navbar adjusted from Materialize (https://materializecss.com/navbar.html) -->
+        <nav class="pink darken-4">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('index') }}" class="brand-logo">Recipe Revolution</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for ('index') }}">Home</a></li>
+                    <li><a href="{{ url_for ('categories') }}">Categories</a></li>
+                    <li><a href="{{ url_for ('recipes') }}">Recipes</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for ('index') }}">Home</a></li>
             <li><a href="{{ url_for ('categories') }}">Categories</a></li>
-            <li><a href="{{ url_for ('recipes') }}">Recipe</a></li>
+            <li><a href="{{ url_for ('recipes') }}">Recipes</a></li>
         </ul>
-    </nav>
+
+    </header>
 
     {% block content %}
     {% endblock %}
