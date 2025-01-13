@@ -11,3 +11,18 @@ main {
     flex: 1 0 auto;
 }
 /* */
+
+/* Home section */
+
+.header-section{
+    width: 1500px;
+    height: 800px;
+    position: relative;
+}
+
+.hero-image{
+    width: 1500px;
+    height: 700px;
+    position: absolute;
+    object-fit: cover;
+}
