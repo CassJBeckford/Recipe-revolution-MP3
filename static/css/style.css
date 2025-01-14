@@ -12,6 +12,10 @@ main {
 }
 /* */
 
+p{
+    font-size: 18px;
+}
+
 /* Home section */
 /* Hero image */
 
@@ -43,6 +47,10 @@ main {
     font-weight: 490;
 }
 
-.card-info{
-    font-size: 18px;
+/* Recipe of the week */
+
+.desert{
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
 }
