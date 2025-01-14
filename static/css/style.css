@@ -13,6 +13,7 @@ main {
 /* */
 
 /* Home section */
+/* Hero image */
 
 .header-section{
     width: 1500px;
@@ -25,4 +26,23 @@ main {
     height: 700px;
     position: absolute;
     object-fit: cover;
+}
+
+.hero-image-card{
+    bottom: 10px;
+    right: 290px;
+    position: absolute;
+}
+
+.card .card-content .card-title {
+    margin-bottom: 30px;
+}
+
+.card .card-title {
+    font-size: 30px;
+    font-weight: 490;
+}
+
+.card-info{
+    font-size: 18px;
 }
