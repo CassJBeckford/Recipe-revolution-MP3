@@ -24,4 +24,49 @@
         </div>
 
     </div>
+
+     <!-- Recipe of the week-->
+    <div class="row">
+        <div>
+            <h2 class="center-align">Recipe of the Week</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row valign-wrapper">
+            <div class="col s6 right-align">
+                <img class="desert responsive-img" src="{{ url_for('static', filename='media/lemon-cake.jpg') }}">
+            </div>
+            <div class="col s6 left-align">
+                <p><span><h5>Lemon cake</h5></span>
+                    <br>
+                    This is a description of lemon cake
+                    <br>
+                    Difficulty  |  Time  |  Amount fed 
+                </p>
+            </div>
+        </div>
+        <div class="row valign-wrapper">
+            <div class="col s6">
+                <div class="info card pink darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Instructions</span>
+                        <p class="card-info">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="info card pink darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Ingredients</span>
+                        <p class="card-info">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
 {% endblock %}
